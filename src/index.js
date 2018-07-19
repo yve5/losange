@@ -29,6 +29,7 @@ function displayDiamond(myCharacter) {
     isALetter = true;
     // Related to exemples, I convert all lower-case letters to upper-case letters 
     myCharacter = myCharacter.toUpperCase();
+    myCharCode = myCharacter.charCodeAt(0);
   }
 
   if (myCharCode >= 65 && myCharCode <= 90) {
@@ -46,7 +47,7 @@ function displayDiamond(myCharacter) {
   }
   
   // I make and I display the diamond.
-  let ACharCode = 97;
+  let ACharCode = 65;
   let i = ACharCode;
   let incrementedLoop = true;
   let stopLoop = false;
